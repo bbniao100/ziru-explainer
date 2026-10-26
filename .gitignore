@@ -1,0 +1,38 @@
+# Local configuration, credentials and generated job records
+.env
+.env.*
+!.env.example
+runtime.json
+runtime.local.json
+work/
+validation/
+outputs/
+renders/
+logs/
+cache/
+temp/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Personal media, model weights and generated archives do not belong in this repo
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.zip
+
+# Editor and OS state
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "paths": {
+    "workspace": "./work",
+    "comfy_root": "../ComfyUI",
+    "model_root": "../ComfyUI/models",
+    "comfy_input": "../ComfyUI/input",
+    "ffmpeg": "ffmpeg",
+    "ffprobe": "ffprobe"
+  },
+  "comfy_url": "http://127.0.0.1:8189",
+  "h3": {
+    "unet": "Minimax-h3/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "text_encoder": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "video_vae": "minimax_h3_video_vae_fp16.safetensors",
+    "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+    "lora": "MiniMax-H3/minimax_h3_turbo_v4_step600_ema.safetensors",
+    "steps": 8,
+    "lora_strength": 1.0,
+    "low_vram": false,
+    "width": 1024,
+    "height": 576,
+    "frames": 124,
+    "fps": 24,
+    "seed": 20261026
+  },
+  "operation": {
+    "maximum_parallel_gpu_tasks": 1,
+    "minimum_gpu_rest_seconds": 60,
+    "automatic_submission": false,
+    "automatic_retry": false
+  },
+  "delivery": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "program_lufs": -16.0,
+    "lufs_tolerance": 0.5,
+    "true_peak_limit": -1.0,
+    "ai_super_resolution": false
+  }
+}
